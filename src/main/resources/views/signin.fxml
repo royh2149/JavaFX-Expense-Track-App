@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?language javascript?>-->
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+
+
+<!-- One component is allowed as root-->
+<!-- we add some namespace to use more advanced attributes and properties. with id we can refer the widgets elsewhere-->
+<!-- the set* whereas * is the attribute is the matching method in java-->
+
+
+<VBox alignment="CENTER"
+          xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="EntranceController"
+          stylesheets="styles/style1.css"
+>
+    <AnchorPane>
+        <Button fx:id="back2" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" onAction="#home" ><graphic>
+            <ImageView><Image requestedWidth="40" requestedHeight="30" url="/imgs/backward.png"></Image> </ImageView>
+        </graphic></Button>
+    </AnchorPane>
+    <VBox BorderPane.alignment="BOTTOM_CENTER" alignment="CENTER">
+        <ImageView>
+            <Image requestedWidth="200" requestedHeight="200" url="imgs/icon.png"></Image>
+        </ImageView>
+
+        <Label fx:id="title" alignment="CENTER">Expense Tracker</Label>
+        <Label fx:id="welcome" alignment="CENTER">Enter your username and password:</Label>
+
+        <HBox spacing="60" alignment="CENTER">
+            <Label styleClass="input">Username:</Label>
+            <TextField fx:id="username2" ></TextField>
+        </HBox>
+
+        <HBox spacing="30" alignment="CENTER">
+            <Label styleClass="input">Password:</Label>
+            <PasswordField fx:id="password2"></PasswordField>
+        </HBox>
+
+        <Button alignment="BASELINE_RIGHT" fx:id="next2" onAction="#homeScreen"><graphic>
+            <ImageView><Image requestedWidth="40" requestedHeight="30" url="/imgs/forward.png"></Image> </ImageView>
+        </graphic></Button>
+    </VBox>
+
+
+</VBox>

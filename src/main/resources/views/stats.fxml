@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="StatsController"
+          alignment="CENTER"
+          stylesheets="/styles/style1.css"
+          prefHeight="600.0" prefWidth="700.0">
+
+    <AnchorPane>
+        <Button fx:id="back1"  AnchorPane.leftAnchor="10"  AnchorPane.topAnchor="10" onAction="#home"><graphic>
+            <ImageView><Image requestedWidth="40" requestedHeight="30" url="/imgs/backward.png"></Image> </ImageView>
+        </graphic></Button>
+    </AnchorPane>
+
+    <Label alignment="CENTER" fx:id="title" wrapText="true" minHeight="80">Specify Details:</Label>
+
+    <HBox spacing="20" alignment="CENTER">
+        <ComboBox fx:id="timespan" onAction="#Personalize"></ComboBox>
+        <ComboBox fx:id="actionType" onAction="#Personalize"></ComboBox>
+    </HBox>
+
+    <PieChart fx:id="mainChart"></PieChart>
+
+
+
+</VBox>

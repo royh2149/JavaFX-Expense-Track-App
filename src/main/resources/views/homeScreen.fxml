@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="HomeScreenController"
+      stylesheets="/styles/style1.css"
+      prefHeight="400.0" prefWidth="600.0"
+      alignment="CENTER">
+
+    <AnchorPane VBox.vgrow="ALWAYS">
+        <Label AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" VBox.vgrow="ALWAYS" fx:id="username"></Label>
+        <HBox spacing="5" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="10">
+            <Button fx:id="stats" onAction="#statsPage"><graphic>
+                <ImageView><Image requestedWidth="40" requestedHeight="30" url="/imgs/stats.png"></Image> </ImageView>
+            </graphic></Button>
+            <Button fx:id="add" onAction="#addAction"><graphic>
+                <ImageView><Image requestedWidth="40" requestedHeight="30" url="/imgs/plus.png"></Image> </ImageView>
+            </graphic></Button>
+            <Button fx:id="settings" onAction="#openSettings"><graphic>
+                <ImageView><Image requestedWidth="40" requestedHeight="30" url="/imgs/settings.png"></Image> </ImageView>
+            </graphic></Button>
+        </HBox>
+    </AnchorPane>
+
+    <Label textAlignment="CENTER" alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS" fx:id="balanceLabel">0.0</Label>
+
+    <ListView fx:id="list">
+
+    </ListView>
+
+</VBox>

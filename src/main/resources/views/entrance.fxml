@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?language javascript?>-->
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+
+
+<!-- One component is allowed as root-->
+<!-- we add some namespace to use more advanced attributes and properties. with id we can refer the widgets elsewhere-->
+<!-- the set* whereas * is the attribute is the matching method in java-->
+
+
+<VBox alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="EntranceController"
+      stylesheets="/styles/style1.css"
+>
+    <VBox BorderPane.alignment="BOTTOM_CENTER" alignment="CENTER">
+        <ImageView>
+            <Image requestedWidth="200" requestedHeight="200" url="/imgs/icon.png"></Image>
+        </ImageView>
+        <Label fx:id="title" alignment="CENTER">Expense Tracker</Label>
+
+        <HBox stylesheets="/styles/style1.css" alignment="CENTER" spacing="30">
+            <Button onAction="#signInClicked">Sign in</Button>
+            <Button onAction="#signUpClicked">Sign up</Button>
+        </HBox>
+
+        <Label fx:id="welcome" alignment="CENTER">Welcome!</Label>
+    </VBox>
+
+
+</VBox>
