@@ -1,0 +1,23 @@
+.dates{
+    -fx-text-fill: gray;
+}
+
+.types{
+    -fx-underline: true;
+    -fx-font-weight: bold;
+    -fx-text-fill: blue;
+}
+
+.sums{
+    -fx-font-weight: bold;
+}
+
+.categories{
+    -fx-underline: true;
+    -fx-font-weight: bold;
+}
+
+.vbox{
+    -fx-border-width: 10;
+}
+

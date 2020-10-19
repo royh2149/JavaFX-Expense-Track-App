@@ -1,0 +1,42 @@
+.button{
+    -fx-font-size: 30;
+    -fx-underline: true;
+    -fx-text-fill: blue;
+}
+
+#title{
+    -fx-font-size: 40;
+    -fx-text-fill: coral;
+    -fx-font-weight: bold;
+    -fx-wrap-text: true;
+}
+
+#welcome{
+    -fx-font-size: 20;
+    -fx-text-fill: chartreuse;
+    -fx-font-weight: bold;
+}
+
+.input{
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-font-size: 20;
+}
+
+.indicator{
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+
+#balanceLabel{
+    -fx-font-size: 150;
+    -fx-font-weight: bold;
+}
+
+#username{
+    -fx-font-size: 30;
+    -fx-underline: true;
+    -fx-text-fill: blue;
+    -fx-font-weight: bold;
+}
+
